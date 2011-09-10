@@ -1,0 +1,230 @@
+/* Typography */
+
+body {
+	background: #fff;
+	color: #444;
+	font-family: 'Segoe UI', Calibri, Helvetica, sans-serif;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* Structure */
+
+#container {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#header ul {
+	list-style: none;
+}
+
+#header li {
+	float: left;
+	margin-right: 20px;
+}
+
+.logo {
+	float: left;
+	margin-right: 20px;
+}
+
+.logo a {
+	height: 67px;
+	width: 100px;
+	display: block;
+	background: url(../img/logo.jpeg) no-repeat 0 0;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+input[type="text"] {
+	font-size: 90%;
+}
+
+#RsvpKeyword {
+	display: inline;
+	width: 200px;
+	margin: 0 10px;
+}
+
+#credits {
+	clear: both;
+	margin-top: 80px;
+	color: #666;
+	font-size: 12px;
+}
+
+#credits a, .muted {
+	color: #666;
+	font-size: 12px;
+}
+
+#credits a:hover, .muted:hover {
+	color: #000;
+}
+
+.muted {
+	margin-left: 10px;
+}
+
+/* Member Grid */
+
+.member {
+	width: 100px;
+	height: 120px;
+	padding: 4px;
+	margin: 5px 0;
+	border: 1px solid transparent;
+	float:left;
+	position: relative;
+	clear:none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	z-index: 5;
+}
+
+#checkin-grid .member:hover {
+	border: 1px solid #778d1b;
+	background: #f0f6d1;
+}
+
+#checkin-grid .member:hover .memberPhoto {
+	opacity: .6;
+}
+
+.member-header {
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.img-wrap {
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+}
+
+.memberPhoto {
+	width: 100px;
+	min-height: 100px;
+}
+
+.member .checkin {
+	display: none;
+}
+
+.member:hover .checkin {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 128px;
+	width: 108px;
+	text-align: center;
+	z-index: 20;
+}
+
+.checkin span {
+	background: #d7e98a url(../img/check.png) no-repeat 2px center;
+	border: 1px solid #778d1b;
+	color: #536212;
+	border-radius: 13px;
+	-moz-border-radius: 13px;
+	-webkit-border-radius: 13px;
+	font-size: 12px;
+	display: inline-block;
+	padding: 0 10px 0 28px; 
+	height: 25px;
+	line-height: 25px;
+	margin: 110px auto 0;
+}
+
+/* Mobile Support */
+
+.member .mobile {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 128px;
+	width: 108px;
+	text-align: center;
+	z-index: 20;
+}
+
+.mobile span {
+	display: none;
+}
+
+/* BIG button - http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/ */
+
+#hidetime a {
+width: 400px;
+height: 100px;
+line-height: 100px;
+color: white;
+text-decoration: none;
+font-size: 50px;
+font-family: helvetica, arial;
+font-weight: bold;
+display: block;
+text-align: center;
+position: relative;
+margin: 20px auto;
+background: #014464;
+background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C)); 
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+border: 1px solid #368DBE;
+border-top: 1px solid #c3d6df;
+text-shadow: 1px 1px 1px black;
+-moz-box-shadow: 0 1px 3px black;
+-webkit-box-shadow: 0 1px 3px black;
+box-shadow: 0 1px 3px black;
+}
+
+#hidetime a:hover {
+background: #014464;
+background: -moz-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(.5, #0b5273), color-stop(.51, #024869), to(#003853));
+}
+
+#hidetime a:active {
+position: relative;
+top: 1px;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+}
+
+/* Other */
+
+.hide {
+	margin-left: -1000px;
+}
+
+.show {
+	display: inline;
+}
+
+.instructions {
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+div.sum p {
+	width: 100%;
+	display:block;
+	clear:both;
+	float:left;
+}

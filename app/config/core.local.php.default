@@ -1,0 +1,9 @@
+<?php
+
+    // This is a very simple password system, meant for quick deployment.
+    // not recommended for high-security stuff!
+    // Use the format array( 'username' => 'password' );
+    $GLOBALS['AdminUsers'] = array('example_user' => 'example_password');
+
+    //You will need a meetup api-key. This will allow you to access your groups.
+    define( 'MEETUP_API_KEY', '**ENTER YOUR MEETUP API KEY HERE**');
