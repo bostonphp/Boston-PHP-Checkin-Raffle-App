@@ -46,4 +46,3 @@ This partial preview is static (it selects the same winner each time) but gives 
 ## Upcoming impovements
 - Winner's circle at the top, save winners to database to prevent people from winning twice.
 - Branding configuration - specific meetup names should be in a config file so it's easier to set-up for other meetups.
-- Merge public branch
